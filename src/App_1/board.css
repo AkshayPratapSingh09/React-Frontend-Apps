@@ -1,0 +1,43 @@
+.container{
+    width: 100vw;
+    padding: 30px;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid black;
+
+}
+
+.box{
+    width: 25%;
+    padding-top: 25%;
+    border: 1px solid black;
+}
+
+.game-over {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-over button{
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.game-over button:hover{
+    color: white;
+    cursor: pointer;
+    transform: scale(0.95);
+    border-color: green;
+    background-color: green;
+}
