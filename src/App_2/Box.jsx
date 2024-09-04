@@ -19,7 +19,7 @@ if(value===1){
 }
     }
   return (
-    <div className='box'
+    <div className='mine-box'
     
     onClick={clickHandler}>
         {isRevealed &&

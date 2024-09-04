@@ -17,12 +17,12 @@ const MineGame = () => {
             }
         });
        },[])
-       
+
 
   return (
-    <div className="main">
+    <div className="main-box">
     <h1>Game Over !</h1>
-    <div className='container'>
+    <div className='container-box'>
     
         <Board matrix={matrix}/>
     </div>
