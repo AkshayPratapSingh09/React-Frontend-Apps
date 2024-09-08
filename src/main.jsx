@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import BoxMatch from './App_1/BoxMatch.jsx';
 import MineGame from './App_2/MineGame.jsx';
+import ReactExplorer from './App_3/ReactExplorer.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/App2",
     element: <MineGame/>,
+  },
+  {
+    path: "/App3",
+    element: <ReactExplorer/>,
   },
 ]);
 
