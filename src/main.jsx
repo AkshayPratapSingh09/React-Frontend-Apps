@@ -9,6 +9,8 @@ import {
 import BoxMatch from './App_1/BoxMatch.jsx';
 import MineGame from './App_2/MineGame.jsx';
 import ReactExplorer from './App_3/ReactExplorer.jsx';
+import CSSLayouts from './App4/CSSLayouts.jsx';
+import FirstGridSite from './App4/GridSite1/FirstGridSite.jsx';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +28,14 @@ const router = createBrowserRouter([
   {
     path: "/App3",
     element: <ReactExplorer/>,
+  },
+  {
+    path: "/App4",
+    element: <CSSLayouts/>,
+  },
+  {
+    path: "/App4/firstGrid",
+    element: <FirstGridSite/>,
   },
 ]);
 

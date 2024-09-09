@@ -70,3 +70,27 @@ const explorer = {
   };
   
   export default explorer;
+
+  // Recursive function to add a file to the specified folder
+export const addFileToFolder = (folder, folderId, newFile) => {
+  if (folder.id === folderId && folder.isFolder) {
+    folder.items.push(newFile);
+    return true; // File added successfully
+  }
+
+  for (let item of folder.items) {
+    if (item.isFolder) {
+      const added = addFileToFolder(item, folderId, newFile);
+      if (added) return true; // Exit recursion when file is added
+    }
+  }
+  return false; // Folder not found
+};
+
+// Usage: Add a new file to the "public nested 1" folder (id: 3)
+const newFile = {
+  id: "12",
+  name: "newFile.js",
+  isFolder: false,
+  items: [],
+};
