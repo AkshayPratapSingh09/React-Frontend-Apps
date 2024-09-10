@@ -17,8 +17,8 @@ const CSSLayouts = () => {
 </div>
     <div className={styles[defaultClass]}>
         <div><Link className={styles.link} to={"/App4/firstGrid"}>First Project</Link></div>
-        <div><Link className={styles.link} to={"/App4/firstGrid"}>First Project</Link></div>
-        <div><Link className={styles.link} to={"/App4/firstGrid"}>First Project</Link></div>
+        <div><Link className={styles.link} to={"/App4/SecondGrid"}>Second Project</Link></div>
+        <div><Link className={styles.link} to={"/App4/ThirdGrid"}>Third Project</Link></div>
         <div><Link className={styles.link} to={"/App4/firstGrid"}>First Project</Link></div>
         <div><Link className={styles.link} to={"/App4/firstGrid"}>First Project</Link></div>
         <div><Link className={styles.link} to={"/App4/firstGrid"}>First Project</Link></div>
